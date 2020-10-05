@@ -1,0 +1,25 @@
+ALGORITHM 
+VAR
+str : STRING; 
+nbrvoyele: INTEGER:=0;
+nbrword: INTEGER:=0
+nbrlength: INTEGER:=0
+i: INTEGER:=0
+BEGIN
+read(str);
+
+
+WHILE (str[i}<>.) DO
+    
+  SWITCH (str[i]) DO
+      case " " : nbrword=nbrword+1
+      a,e,y,i,o : nbrvoyele=nbrvoyele+1;
+                 nbrlength=nbrlength+1
+      default : nbrlength=nbrlength+1
+  END_SWITCH 
+  i=i+1
+END_WHILE
+  write(nbrLength);
+    write(nbrWord);
+    write(nbrVoyel);
+END
